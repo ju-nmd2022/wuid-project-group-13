@@ -221,6 +221,7 @@ section {
 }
 .btn:hover{
   text-decoration: underline;
+  background-color: #99b57f;
 }
 @media (max-width: 1000px) {
   .navbar {

@@ -218,7 +218,7 @@ section {
   border-radius: 5px;
 }
 .date2 { grid-area: date2; 
-  background-color: #C2D7B0;
+  background-color: #99b57f;
   color: #FDF8ED;
   padding-top: 14px;
   border-radius: 5px;
@@ -247,7 +247,7 @@ section {
     "time1 time2";
 }
 .time1 { grid-area: time1; 
-  background-color: #C2D7B0;
+  background-color: #99b57f;
   color: #FDF8ED;
   padding-top: 2px;
   border-radius: 5px;
@@ -309,6 +309,7 @@ section {
 }
 .btn:hover{
   text-decoration: underline;
+  background-color: #99b57f;
 }
 
 @media (max-width: 1000px) {

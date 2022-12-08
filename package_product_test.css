@@ -398,7 +398,9 @@ height: 160px;}
   color: #FDF8ED;
 }
 .btn:hover{
-text-decoration: underline;}
+  text-decoration: underline;
+  background-color: #99b57f;
+}
 .price {
   margin-top: 10px;
   font-size: 20pt;
