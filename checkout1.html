@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="checkout1.css">
+    <!-- added the fonts needed for the webpage. Information on how to do so is found in the links. /CÖ-->
+    <!-- https://www.cdnfonts.com/futura-pt.font -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/futura-pt">
+    <!-- https://www.cdnfonts.com/futura-condensed-pt.font -->
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/futura-condensed-pt">  
+    <script src="main.js" defer></script>
+    <title>Brunchly Checkout 1</title>
+</head>
+<body>
+    <header>
+        <!-- https://www.youtube.com/watch?v=flItyHiDm7E Used this video to get the code needed to make the header responsive with a hamburger menu. /CÖ-->
+        <nav class="navbar">
+            <a href="index.html"><img src="images/brunchly_logotype_rgb.svg" class="nav-branding"/></a> 
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="package_overview.html" class="nav-link">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="recipe_overview.html" class="nav-link">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a href="aboutus.html" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="basket.html"><img src="images/basket.svg" alt="Stylized image on a shopping basket" id="basketheader" class="basketheader"/></a>
+                </li>
+  
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <br/>
+    <main>
+        <span class="checkoutgrid">
+            <section class="checkout">
+            <div class="text">Checkout</div>
+            <div class="textpersonalinfo">Personal information</div>
+            <form class="personalinformation">
+                <label for="fullname">First name:</label><br/>
+                <input type="text" id="firstname" placeholder="Andrea" name="first" style="width: 270px; height: 40px;"><br/>
+                <label for="lastname">Last name:</label><br/>
+                <input type="text" id="lastname" placeholder="Andersson" name="lastname"style="width: 270px; height: 40px;"><br/>
+                <label for="email">Email Adress:</label><br/>
+                <input type="email" id="email" placeholder="andrea.andersson@student.ju.se" name="email" style="width: 270px; height: 40px;"><br/>
+                <label for="number">Phone Number:</label><br/>
+                <input type="number" id="phonenumber" placeholder="0701234567" name="phonenumber" style="width: 270px; height: 40px;"><br/>
+                <label for="adress">Adress:</label><br/>
+                <input type="text" id="adress" placeholder="Adelgatan 52" name="adress" style="width: 270px; height: 40px;"><br/>
+                <label for="city">City:</label><br/>
+                <input type="text" id="city" placeholder="Jönköping" name="city" style="width: 270px; height: 40px;"><br/>
+                <label for="post">Post Code:</label><br/>
+                <input type="number" id="post" placeholder="55768" name="post" style="width: 270px; height: 40px;"><br/>
+                <label for="country">Country:</label><br/>
+                <input type="text" id="country" placeholder="Sweden" name="country" style="width: 270px; height: 40px;">
+            </form>
+                </section>
+        </div>
+
+              <!-- https://www.w3schools.com/html/html_forms.asp We have used this page for help with the text fields.-->
+            </section>
+            <section class="ordersummary">
+            <div class="text2">Order Summary</div>
+            
+            <div class="text3">Items: 1 item<br/>
+            Order Number: 4467839<br/>
+            Package: Couple (300 sek)<br/>
+            Shipping: 49 sek<br/>
+            Total to pay: 349 sek
+            </div>            <a href="checkout2.html"><div class="btn">Continue Order</div></a>
+            </section>
+</html>

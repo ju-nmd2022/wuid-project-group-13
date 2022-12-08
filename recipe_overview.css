@@ -1,0 +1,249 @@
+a:link {
+  color: #C2D7B0;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #C2D7B0;
+  text-decoration: none;
+
+}
+
+/* mouse over link */
+a:hover {
+  color: #C2D7B0;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #C2D7B0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Futura PT';     
+  background-color: #C2D7B0;
+  margin: auto;
+  color: #FDF8ED;
+}
+/* The following code is the header */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+ background-color: #FDF8ED;
+ position: fixed;
+ width: 100%;
+}
+li{
+  list-style: none;
+
+}
+.navbar{
+min-height: 70px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 15px;
+text-transform: uppercase;
+font-family: 'Futura Condensed PT', sans-serif;     
+font-size: 20pt;
+}
+.nav-menu{
+display: flex;
+justify-content:center;
+align-items: center;
+gap: 60px;
+}
+.nav-branding{
+  font-size: 30pt;
+  padding-right: 20px;
+  padding-top: 10px;
+  width: 300px;
+}
+.nav-link{
+transition: 0.7s ease;
+}
+.hamburger{
+display: none;
+cursor: pointer;
+}
+.bar{
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+background-color: #FDF8ED;
+}
+.gridpackages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  gap: 30px;
+  max-width: 1220px;
+  margin: auto;
+  font-family: 'Futura PT';     
+  text-transform: uppercase;
+  font-size: 16pt;
+  margin-top: 150px;
+}
+.basketheader {
+  height: 30px;
+  display: block;
+}
+.peopleimage {
+  max-width: 280px;
+  border-radius: 30px;
+}
+.peopleimage {
+  max-width: 280px;
+  border-radius: 30px;
+}
+
+.recipestartpage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  gap: 30px;
+  max-width: 960px;
+  margin: auto;
+  font-family: 'Futura PT';     
+  text-transform: uppercase;
+  font-size: 16pt;
+  padding-bottom: 30px;
+  margin-top: 100px;
+}
+.recipeimage {
+  max-width: 120px;
+  border-radius: 10px;
+}
+.linkrecipestartpage {
+  float: right;
+  margin-right: 5px;
+  font-size: 14pt;
+  font-weight: bold;
+}
+section {
+  background-color: #fdf8ed;
+  padding: 10px;
+  border-radius: 20px;
+}
+h4 {
+  font-weight: lighter;
+  font-size: 24pt;
+  font-weight: 400;
+  color: #fdf8ed;
+  margin-left: 10px;
+}
+h5 {
+  margin-top: -2px;
+  float: right;
+  font-size: 14pt;
+  font-weight: bold;
+  max-width: 145px;
+  color: #000000;
+}
+
+h6 {
+  font-weight: lighter;
+  font-size: 12pt;
+  font-weight: 600;
+  margin-left: 220px;
+  margin-top: -25px;
+  margin-bottom: 20px;
+  float: right; 
+  text-transform: uppercase;
+  width: 80px;
+}
+@media(max-width:1000px){
+  .navbar {
+    font-size: 16pt;
+  }
+  .recipestartpage {
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 20px;
+    max-width: 810px;
+    font-size: 14pt;
+    padding: 0 10px;
+    padding-bottom: 30px;
+    margin-top: 100px;
+  }
+  .recipeimage {
+    max-width: 100px;
+    border-radius: 10px;
+  }
+  h5 {
+    font-size: 11pt;
+    max-width: 120px;
+  }
+  h6 {
+    margin-left: 160px;
+    margin-top: -21px;
+  }
+}
+@media(max-width:833px){
+  .bar {
+    background-color: #C2D7B0;
+  }
+  .hamburger{
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);  
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);  
+  }
+
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #FDF8ED;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-branding{
+    width: 250px;
+  }
+  .nav-item{
+    margin: 16px 0;
+  }
+  .nav-menu.active{
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 400px 100px 100px;}
+    /* https://getcssscan.com/css-box-shadow-examples used this link to get drop shadow properties. */
+  
+    .recipestartpage {
+      grid-template-columns: repeat(auto-fit, 300px);
+      gap: 20px;
+      max-width: 300px;
+      font-size: 16pt;
+      padding: 0 10px;
+      padding-bottom: 30px;
+      margin-top: 100px;
+    }
+    .recipe {
+      max-width: 120px;
+    }
+    h5 {
+      font-size: 14pt;
+      max-width: 150px;
+    }
+    h6 {
+      margin-left: 210px;
+      margin-top: -21px;
+    }
+  }

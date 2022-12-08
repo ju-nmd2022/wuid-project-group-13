@@ -1,0 +1,216 @@
+a:link {
+  color: #C2D7B0;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #C2D7B0;
+  text-decoration: none;
+
+}
+
+/* mouse over link */
+a:hover {
+  color: #C2D7B0;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #C2D7B0;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Futura PT';    
+  background-color: #C2D7B0;
+  margin: auto;
+  color: #FDF8ED;
+}
+/* The following code is the header */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+ background-color: #FDF8ED;
+ position: fixed;
+ width: 100%;
+}
+li{
+  list-style: none;
+}
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-family: 'Futura Condensed PT', sans-serif;     
+  font-size: 20pt;
+  }
+.nav-menu{
+display: flex;
+justify-content:center;
+align-items: center;
+gap: 60px;
+}
+.nav-branding{
+  font-size: 30pt;
+  padding-right: 20px;
+  padding-top: 10px;
+  width: 300px;
+}
+.nav-link{
+transition: 0.7s ease;
+}
+.hamburger{
+display: none;
+cursor: pointer;
+}
+.bar{
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+-webkit-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
+background-color: #FDF8ED;
+}
+.basketheader {
+    height: 30px;
+    display: block;
+}
+.basketheaderorder {
+  height: 41px;
+  display: none;
+}
+.gridpackages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
+  gap: 30px;
+  max-width: 1220px;
+  margin: auto;
+  font-family: 'Futura PT';    
+  text-transform: uppercase;
+  font-size: 16pt;
+  padding: 20px;
+  padding-bottom: 30px;
+  margin-top: 100px;
+}
+
+  .contentcontact {
+    padding-top: 300px;
+  }
+  .contentaboutus {
+    padding-top: 200px;
+  }
+  .maintext {
+    font-family: 'Futura PT';    
+    text-transform: uppercase;
+    font-size: 30pt;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+  }  
+  .maintextbigger {
+    font-family: 'Futura PT';    
+    text-transform: uppercase;
+    font-size: 54pt;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    max-width: 600px;
+    margin: auto;
+  } 
+  .subtext {
+    font-family: 'Futura PT';    
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18pt;
+    padding: 10px;
+    padding-top: 10px;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  @media(max-width:1000px){
+    .navbar {
+      font-size: 16pt;
+    }
+  }
+  @media(max-width:833px){
+    .bar {
+      background-color: #C2D7B0;
+    }
+    .hamburger{
+      display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);  
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);  
+    }
+  
+    .nav-menu{
+      position: fixed;
+      left: -100%;
+      top: 70px;
+      gap: 0;
+      flex-direction: column;
+      background-color: #FDF8ED;
+      width: 100%;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .nav-branding{
+      width: 250px;
+    }
+    .nav-item{
+      margin: 16px 0;
+    }
+    .nav-menu.active{
+      left: 0;
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 400px 100px 100px;}
+      /* https://getcssscan.com/css-box-shadow-examples used this link to get drop shadow properties. */
+    
+      .contentcontact {
+        padding-top: 130px;
+      }
+      .contentaboutus {
+        padding: 120px 20px;
+      }
+      .maintext {
+        font-family: 'Futura PT';    
+        text-transform: uppercase;
+        font-size: 20pt;
+        text-align: center;
+        font-weight: bold;
+        padding: 20px;
+        margin: auto;
+      }  
+      .maintextbigger {
+        font-family: 'Futura PT';    
+        text-transform: uppercase;
+        font-size: 32pt;
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+        margin: auto;
+      } 
+      .subtext {
+        font-size: 14pt;
+        margin: auto;
+        padding: 25px 0;
+      }
+    }
