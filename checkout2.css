@@ -60,6 +60,9 @@ header {
   position: fixed;
   width: 100%;
 }
+li {
+  list-style: none;
+}
 .navbar {
   min-height: 70px;
   display: flex;
@@ -69,7 +72,6 @@ header {
   text-transform: uppercase;
   font-family: "Futura Condensed PT", sans-serif;
   font-size: 20pt;
-  list-style: none;
 }
 .nav-menu {
   display: flex;
@@ -100,12 +102,8 @@ header {
   background-color: #fdf8ed;
 }
 .basketheader {
-  height: 30px;
-  display: block;
-}
-.basketheaderorder {
   height: 41px;
-  display: none;
+  margin-top: 9px;
 }
 .recipetext {
   font-family: "Futura PT";

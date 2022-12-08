@@ -100,8 +100,8 @@ header {
   background-color: #fdf8ed;
 }
 .basketheader {
-  height: 30px;
-  display: block;
+  height: 41px;
+  margin-top: 9px;
 }
 
 .recipetext {
