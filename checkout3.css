@@ -4,25 +4,6 @@ body {
   margin: auto;
   color: #fdf8ed;
 }
-.p {
-  font-family: Arial;
-  font-size: 16pt;
-  margin-left: 35px;
-}
-.p1 {
-  font-family: Arial;
-  font-size: 16pt;
-  margin-left: 35px;
-  font-weight: bold;
-  margin-top: 16px;
-}
-.p2 {
-  font-family: Arial;
-  font-size: 16pt;
-  margin-left: 35px;
-  font-weight: bold;
-  margin-top: 10px;
-}
 a:link {
   color: #c2d7b0;
   text-decoration: none;
@@ -103,18 +84,6 @@ header {
   height: 41px;
   margin-top: 9px;
 }
-
-.recipetext {
-  font-family: "Futura PT";
-  text-transform: uppercase;
-  font-size: 28pt;
-  text-align: center;
-}
-.subtext {
-  font-family: "Futura Condensed PT", sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-}
 .checkoutgrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 700px);
@@ -135,26 +104,20 @@ header {
 .ordersummary {
   height: 340px;
   justify-content: center;
-}
-.producttext {
-  color: #000000;
-  font-size: 8pt;
-  max-width: 300px;
-  font-weight: lighter;
-  margin-left: 10px;
+  margin-bottom: 30px;
 }
 section {
   background-color: #fdf8ed;
   border-radius: 20px;
 }
-.text {
+.checkouttext {
   color: #000000;
   font-size: 30pt;
   font-weight: bold;
   text-align: center;
   margin-top: 5px;
 }
-.text2 {
+.paymentmethod {
   color: #000000;
   font-size: 24pt;
   font-family: "Futura Condensed PT", sans-serif;
@@ -169,12 +132,15 @@ section {
   margin-left: 34px;
   text-transform: uppercase;
 }
-.text3 {
+.ordersummarytext {
   color: #000000;
   font-size: 14pt;
-  margin-top: 20px;
   font-weight: lighter;
+  line-height: 2;
+  margin-top: 20px;
+  margin-left: 35px;
 }
+
 #boxtext {
   width: 300px;
   height: 40px;
@@ -187,21 +153,13 @@ section {
   margin-bottom: 5px;
   font-size: smaller;
 }
-
 .ordersummary {
   padding-bottom: 20px;
   height: 280px;
   text-transform: uppercase;
   justify-content: center;
 }
-.text3 {
-  color: #000000;
-  font-size: 14pt;
-  margin-top: 20px;
-  margin-left: 35px;
-  font-weight: lighter;
-  line-height: 2;
-}
+
 .btn {
   background-color: #C2D7B0;
   color: #FDF8ED;
@@ -228,8 +186,8 @@ section {
     font-size: 16pt;
   }
 }
-@media screen and (max-width: 833px) {
-  @media (max-width: 833px) {
+
+@media (max-width: 833px) {
     .bar {
       background-color: #c2d7b0;
     }
@@ -296,12 +254,6 @@ section {
     }
     .ordersummary {
       height: 370px;
-      margin-bottom: 30px;
     }
   }
-  @media screen and (max-width: 590px) {
-    .recipestartpage {
-      max-width: 300px;
-    }
-  }
-}
+

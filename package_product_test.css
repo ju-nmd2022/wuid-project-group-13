@@ -5,7 +5,7 @@ input[type="radio"] {
 
 .select {
   position: relative;
-  width: 270px;
+  width: 305px;
   font-weight: 400;
   font-size: 10pt;
 }
@@ -86,7 +86,7 @@ input[type="radio"] {
 /* bar22222 */
 .select2 {
   position: relative;
-  width: 270px;
+  width: 305px;
   font-weight: 400;
   font-size: 10pt;
 }
@@ -167,7 +167,7 @@ input[type="radio"] {
 /* bar333333 */
 .select3 {
   position: relative;
-  width: 270px;
+  width: 305px;
   font-weight: 400;
   font-size: 10pt;
 }
@@ -338,7 +338,7 @@ display: none;
 
 .container-package {
   display: grid;
-  grid-template-columns: 450px 300px;
+  grid-template-columns: 450px 340px;
   justify-content: center;
   gap: 30px;
   max-width: 800px;
@@ -370,8 +370,8 @@ p {
   text-transform: none;
 }
 h4 {
-  font-size: 20pt;
-  font-weight: 500;
+  font-size: 24pt;
+  font-weight: 400;
   color: #FDF8ED;
 }
 h5 {
@@ -498,5 +498,17 @@ height: 160px;}
     padding-right: 15px; 
     padding-top: 10px;
     min-height: 330px;
+    }
+    .select {
+      width: 270px;
+    }
+    .select2 {
+      width: 270px;
+    }
+    .select3 {
+      width: 270px;
+    }
+    .btn {
+      margin-top: 100px;
     }
   }

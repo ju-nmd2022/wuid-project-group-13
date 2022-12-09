@@ -4,22 +4,7 @@ body {
   margin: auto;
   color: #fdf8ed;
 }
-.p {
-  font-family: Arial;
-  font-size: 16pt;
-  margin-bottom: 5px;
-}
-.p1 {
-  font-family: Arial;
-  font-size: 16pt;
-  font-weight: bold;
-  margin-top: 16px;
-}
-.p2 {
-  font-family: Arial;
-  font-size: 16pt;
-  margin-top: 10px;
-}
+
 a:link {
   color: #c2d7b0;
   text-decoration: none;
@@ -41,12 +26,6 @@ a:hover {
 a:active {
   color: #c2d7b0;
   text-decoration: none;
-}
-.clockicon {
-  max-width: 11pt;
-}
-li {
-  list-style: none;
 }
 
 /* The following code is the header */
@@ -105,18 +84,7 @@ li {
   height: 41px;
   margin-top: 9px;
 }
-.recipetext {
-  font-family: "Futura PT";
-  text-transform: uppercase;
-  font-size: 28pt;
-  text-align: center;
-}
-.subtext {
-  font-family: 'Futura Condensed PT', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-}
-.date {
+.datetime {
   font-family: 'Arial';
   font-weight: 500;
   font-size: 18pt;
@@ -140,7 +108,22 @@ li {
   columns: 2;
   padding-left: 34px;
 }
-
+.personalinformation {
+  font-family: Arial;
+  font-size: 16pt;
+  margin-bottom: 5px;
+}
+.adress {
+  font-family: Arial;
+  font-size: 16pt;
+  font-weight: bold;
+  margin-top: 16px;
+}
+.budbee {
+  font-family: Arial;
+  font-size: 16pt;
+  margin-top: 10px;
+}
 .producttext {
   color: #000000;
   font-size: 8pt;
@@ -151,9 +134,8 @@ li {
 section {
   background-color: #fdf8ed;
   border-radius: 20px;
-  margin-bottom: 30px;
 }
-.text {
+.checkouttext {
   color: #000000;
   font-size: 30pt;
   font-weight: bolder;
@@ -168,33 +150,14 @@ section {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-.text3 {
+.ordersummarytext {
   color: #000000;
   font-size: 14pt;
   margin-top: 20px;
   margin-left: 35px;
   font-weight: lighter;
 }
-#boxtext {
-  width: 300px;
-  height: 30px;
-}
 
-.personalinformation {
-  margin-left: 37px;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  font-size: smaller;
-}
-.personalinformation2 {
-  margin-left: 453px;
-  margin-top: 20px;
-  margin-bottom: 5px;
-  font-size: smaller;
-}
-.pi2 {
-  margin-top: -324px;
-}
 .columns-fields {
   column-count: 2;
 }
@@ -262,8 +225,9 @@ section {
   height: 280px;
   text-transform: uppercase;
   justify-content: center;
+  margin-bottom: 30px;
 }
-.text2 {
+.shippingtext {
   color: #000000;
   font-size: 24pt;
   font-family: "Futura Condensed PT", sans-serif;
@@ -280,7 +244,7 @@ section {
   margin-bottom: 10px;
   text-transform: uppercase;
 }
-.text3 {
+.ordersummarytext {
   color: #000000;
   font-size: 14pt;
   margin-top: 20px;
@@ -315,8 +279,8 @@ section {
     font-size: 16pt;
   }
 }
-@media screen and (max-width: 833px) {
-  @media (max-width: 833px) {
+
+@media (max-width: 833px) {
     .bar {
       background-color: #c2d7b0;
     }
@@ -355,7 +319,7 @@ section {
       box-shadow: rgba(0, 0, 0, 0.4) 0px 400px 100px 100px;
     }
     /* https://getcssscan.com/css-box-shadow-examples used this link to get drop shadow properties. */
-  }
+  
   .checkoutgrid {
     display: grid;
     grid-template-columns: repeat(auto-fit, 300px);
@@ -370,7 +334,7 @@ section {
   }
 
   .checkout {
-    height: 600px;
+    height: 620px;
     justify-content: center;
     columns: 1;
     padding-left: 10px;
@@ -384,13 +348,13 @@ section {
     margin-top: 10px;
     padding-top: 10px;
   }
-  .text {
+  .checkouttext {
     font-size: 34pt;
     font-weight: bolder;
     margin-top: 17px;
     text-align: center;
   }
-  .text2 {
+  .shippingtext {
     color: #000000;
     font-size: 20pt;
     font-family: "Futura Condensed PT", sans-serif;
@@ -406,17 +370,17 @@ section {
     margin-left: 12px;
     text-transform: uppercase;
   }
-  .p {
+  .personalinformation {
     font-size: 12pt;
     margin-left: 12px;
     margin-bottom: 20px;
   }
-  .p1 {
+  .adress {
     font-size: 14pt;
     margin-left: 12px;
     margin-top: 10px;
   }
-  .p2 {
+  .budbee {
     font-size: 12pt;
     margin-top: 0px;
     margin-bottom: 70px;
@@ -449,10 +413,5 @@ section {
     grid-auto-flow: row;
     grid-template-areas:
       "time1 time2";
-  }
-}
-@media screen and (max-width: 590px) {
-  .recipestartpage {
-    max-width: 300px;
   }
 }

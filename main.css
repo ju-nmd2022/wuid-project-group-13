@@ -1,57 +1,56 @@
 a:link {
-    color: #C2D7B0;
-    text-decoration: none;
-  }
+  color: #C2D7B0;
+  text-decoration: none;
+}
   
   /* visited link */
 a:visited {
-    color: #C2D7B0;
-    text-decoration: none;
-
-  }
+  color: #C2D7B0;
+  text-decoration: none;
+}
   
   /* mouse over link */
 a:hover {
-    color: #C2D7B0;
-    text-decoration: underline;
-  }
+  color: #C2D7B0;
+  text-decoration: underline;
+}
   
   /* selected link */
 a:active {
-    color: #C2D7B0;
-    text-decoration: none;
-  }
-  body {
-    font-family: 'Futura PT';
-    background-color: #FDF8ED;
-    margin: auto;
-    color: #C2D7B0;
+  color: #C2D7B0;
+  text-decoration: none;
+}
+body {
+  font-family: 'Futura PT';
+  background-color: #FDF8ED;
+  margin: auto;
+  color: #C2D7B0;
 }
 li{
   list-style: none;
-  }
+}
 /* The following code is the header */
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  header {
-   background-color: #FDF8ED;
-   position: fixed;
-   width: 100%;
-  }
-  .navbar{
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-family: 'Futura Condensed PT', sans-serif;     
-    font-size: 20pt;
-    list-style: none;
-    }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #FDF8ED;
+  position: fixed;
+  width: 100%;
+}
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-family: 'Futura Condensed PT', sans-serif;     
+  font-size: 20pt;
+  list-style: none;
+}
 .nav-menu{
   display: flex;
   justify-content:center;
@@ -81,59 +80,59 @@ li{
   background-color: #FDF8ED;
 }
 .basketheader {
-    height: 30px;
-    display: block;
+  height: 30px;
+  display: block;
 }
 .basketheaderorder {
   height: 41px;
   display: none;
 }
-  .recipetext {
-    font-family: 'Futura PT';
-    font-weight: 500;    
-    text-transform: uppercase;
-    font-size: 30pt;
-    text-align: center;
-    padding-top: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }  
-  .subtext {
-    font-family: 'Futura Condensed PT', sans-serif;     
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 14pt;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 30px;
-  }
+.recipetext {
+  font-family: 'Futura PT';
+  font-weight: 500;        
+  text-transform: uppercase;
+  font-size: 30pt;
+  text-align: center;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}  
+.subtext {
+  font-family: 'Futura Condensed PT', sans-serif;     
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14pt;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 30px;
+}
 .heroimg {
-max-width: 100%;
-margin-top: 70px;
+  max-width: 100%;
+  margin-top: 70px;
 }
 .recipestartpage {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 280px);
-    justify-content: center;
-    gap: 30px;
-    max-width: 1230px;
-    margin: auto;
-    font-family: "Futura PT";
-    text-transform: uppercase;
-    font-size: 18pt;
-    font-weight: 500;
-    padding: 10px;
-    padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 280px);
+  justify-content: center;
+  gap: 30px;
+  max-width: 1230px;
+  margin: auto;
+  font-family: "Futura PT";
+  text-transform: uppercase;
+  font-size: 18pt;
+  font-weight: 500;
+  padding: 10px;
+  padding-bottom: 30px;
 }
 .recipestartpageimage {
- max-width: 280px;
- border-radius: 30px;
+  max-width: 280px;
+  border-radius: 30px;
 }
 .linkrecipestartpage {
-    float: right;
-    margin-right: 5px;
-    font-size: 12pt;
-    font-weight: bold;
+  float: right;
+  margin-right: 5px;
+  font-size: 12pt;
+  font-weight: bold;
 }
 
 @media(max-width:1000px){
